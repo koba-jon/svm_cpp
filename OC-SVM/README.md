@@ -2,6 +2,10 @@
 
 This is the implementation of OC-SVM (One Class Support Vector Machine).
 
+- Class: 1
+- Problem: Linearly Non-separable
+- Decision Boundary: Non-linear
+
 ## Usage
 
 ## Formula
