@@ -48,8 +48,7 @@ $ cd svm_cpp
 
 ## 5. License
 
-### This repository
-[MIT License](LICENSE)
+This repository: [MIT License](LICENSE)
 
 ### 3rd-Party Libraries
 - Boost <br>
