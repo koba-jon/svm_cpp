@@ -2,6 +2,10 @@
 
 This is the implementation of Kernel SVM (Non-linear Support Vector Machine).
 
+- Class: 2
+- Problem: Linearly Non-separable
+- Decision Boundary: Non-linear
+
 ## Usage
 
 ## Formula
