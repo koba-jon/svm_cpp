@@ -2,6 +2,11 @@
 
 This is the implementation of Hard Margin SVM (Hard Margin Support Vector Machine).
 
+- Class: 2
+- Problem: Linearly Separable
+- Decision Boundary: Linear
+
+
 ## Usage
 
 ## Formula
