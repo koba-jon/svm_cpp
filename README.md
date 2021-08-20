@@ -8,7 +8,7 @@ These are implementations of Support Vector Machines from scratch in C++.
     <th>Model</th>
     <th>Class</th>
     <th>Problem</th>
-    <th>Decision boundary</th>
+    <th>Decision Boundary</th>
     <th>Code</th>
   </tr>
   <tr>
