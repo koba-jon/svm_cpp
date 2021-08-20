@@ -12,28 +12,28 @@ These are implementations of Support Vector Machines from scratch in C++.
     <th>Code</th>
   </tr>
   <tr>
-    <td>Hard Margin SVM<br>(Hard Margin Support Vector Machine)</td>
+    <td>Hard Margin SVM</td>
     <td>2</td>
     <td>Linearly Separable</td>
     <td>Linear</td>
     <td><a href="HardMargin-SVM">HardMargin-SVM</a></td>
   </tr>
   <tr>
-    <td>Soft Margin SVM<br>(Soft Margin Support Vector Machine)</td>
+    <td>Soft Margin SVM</td>
     <td>2</td>
     <td>Linearly Non-separable</td>
     <td>Linear</td>
     <td><a href="SoftMargin-SVM">SoftMargin-SVM</a></td>
   </tr>
   <tr>
-    <td>Kernel SVM<br>(Non-linear Support Vector Machine)</td>
+    <td>Kernel SVM</td>
     <td>2</td>
     <td>Linearly Non-separable</td>
     <td>Non-linear</td>
     <td><a href="Kernel-SVM">Kernel-SVM</a></td>
   </tr>
   <tr>
-    <td>OC-SVM<br>(One Class Support Vector Machine)</td>
+    <td>OC-SVM</td>
     <td>1</td>
     <td>Linearly Non-separable</td>
     <td>Non-linear</td>
