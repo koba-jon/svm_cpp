@@ -2,6 +2,10 @@
 
 This is the implementation of Soft Margin SVM (Soft Margin Support Vector Machine).
 
+- Class: 2
+- Problem: Linearly Non-separable
+- Decision Boundary: Linear
+
 ## Usage
 
 ## Formula
