@@ -1,6 +1,6 @@
 # Kernel SVM
 
-This is the implementation of Kernel SVM (Kernel Support Vector Machine).
+This is the implementation of Kernel SVM (Non-linear Support Vector Machine).
 
 ## Usage
 
