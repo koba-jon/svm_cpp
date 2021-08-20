@@ -8,6 +8,53 @@ This is the implementation of Kernel SVM (Non-linear Support Vector Machine).
 
 ## Usage
 
+### 1. Build
+Please build the source file according to the procedure.
+~~~
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ cd ..
+~~~
+
+### 2. Dataset Setting
+
+The following hierarchical relationships are recommended.
+
+![Kernel-SVM_dataset](datasets/dataset.png)
+
+### 3. Execution
+
+The following is an example for Toy Dataset.
+
+#### Setting
+Please set the shell for executable file.
+~~~
+$ vi scripts/toy.sh
+~~~
+If you want to view specific examples of command line arguments, please view "src/main.cpp" or add "--help" to the argument.
+~~~
+#!/bin/bash
+
+DATA='toy'
+
+./Kernel-SVM \
+    --dataset ${DATA} \
+    --nd 2 \
+    --C 10.0 \
+    --lr 0.0001 \
+    --kernel "rbf" \
+    --gamma 5.0
+~~~
+
+#### Run
+Please execute the following to start the program.
+~~~
+$ sh scripts/toy.sh
+~~~
+
+
 ## Formula
 
 ![Kernel-SVM_dual](https://user-images.githubusercontent.com/56967584/130267966-98d98cb9-bfb0-4d85-aba6-606ba7b04568.png)
