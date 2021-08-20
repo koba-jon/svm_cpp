@@ -3,25 +3,43 @@ These are implementations of Support Vector Machines from scratch in C++.
 
 ## 1. Implementation
 
-### [(1) Hard Margin SVM (Hard Margin Support Vector Machine)](HardMargin-SVM)
-Class: 2 <br>
-Problem: linearly separable <br>
-Decision boundary: linear <br>
-
-### [(2) Soft Margin SVM (Soft Margin Support Vector Machine)](SoftMargin-SVM)
-Class: 2 <br>
-Problem: linearly non-separable <br>
-Decision boundary: linear <br>
-
-### [(3) Kernel SVM (Non-linear Support Vector Machine)](Kernel-SVM)
-Class: 2 <br>
-Problem: linearly non-separable <br>
-Decision boundary: non-linear <br>
-
-### [(4) OC-SVM (One Class Support Vector Machine)](OC-SVM)
-Class: 1 <br>
-Problem: linearly non-separable <br>
-Decision boundary: non-linear <br>
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Class</th>
+    <th>Problem</th>
+    <th>Decision boundary</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>Hard Margin SVM<br>(Hard Margin Support Vector Machine)</td>
+    <td>2</td>
+    <td>Linearly Separable</td>
+    <td>Linear</td>
+    <td><a href="HardMargin-SVM">HardMargin-SVM</a></td>
+  </tr>
+  <tr>
+    <td>Soft Margin SVM<br>(Soft Margin Support Vector Machine)</td>
+    <td>2</td>
+    <td>Linearly Non-separable</td>
+    <td>Linear</td>
+    <td><a href="SoftMargin-SVM">SoftMargin-SVM</a></td>
+  </tr>
+  <tr>
+    <td>Kernel SVM<br>(Non-linear Support Vector Machine)</td>
+    <td>2</td>
+    <td>Linearly Non-separable</td>
+    <td>Non-linear</td>
+    <td><a href="Kernel-SVM">Kernel-SVM</a></td>
+  </tr>
+  <tr>
+    <td>OC-SVM<br>(One Class Support Vector Machine)</td>
+    <td>1</td>
+    <td>Linearly Non-separable</td>
+    <td>Non-linear</td>
+    <td><a href="OC-SVM">OC-SVM</a></td>
+  </tr>
+</table>
 
 ## 2. Requirement
 
