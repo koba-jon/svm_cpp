@@ -1,5 +1,5 @@
-# SVM C++ Implementation
-These are implementations of Support Vector Machines from scratch in C++.
+# SVM C++ Samples
+These are sample programs of Support Vector Machines from scratch in C++.
 
 ## 1. Implementation
 
