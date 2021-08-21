@@ -62,3 +62,4 @@ $ sh scripts/toy.sh
 
 
 ## Algorithm
+![train](https://user-images.githubusercontent.com/56967584/130320799-1e66f672-df42-4bc5-b5d2-e2a4b009326f.png)
