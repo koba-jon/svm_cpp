@@ -289,7 +289,7 @@ void SVDD::train(const std::vector<std::vector<double>> x, const size_t D, const
 
     }
     this->R /= (double)Ns;
-    this->log("Radius = " + std::to_string(this->R) + "\n");
+    this->log("radius = " + std::to_string(this->R) + "\n");
     this->log("//////////////////////////////////////////////////////////////\n\n");
 
     return;
