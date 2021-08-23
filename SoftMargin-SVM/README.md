@@ -4,7 +4,7 @@ This is the implementation of Soft Margin SVM (Soft Margin Support Vector Machin
 
 - Class: 2
 - Problem: Linearly Non-separable
-- Decision Boundary: Linear
+- Decision Boundary: Hyperplane
 
 ## Usage
 
