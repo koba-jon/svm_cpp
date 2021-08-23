@@ -4,7 +4,7 @@ This is the implementation of SVDD (Support Vector Data Description).
 
 - Class: 1
 - Problem: Linearly Non-separable
-- Decision Boundary: Non-linear
+- Decision Boundary: Hypersphere + Kernel
 
 ## Usage
 
