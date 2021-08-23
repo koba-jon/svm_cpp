@@ -15,35 +15,35 @@ These are sample programs of Support Vector Machines from scratch in C++.
     <td>Hard Margin SVM</td>
     <td>2</td>
     <td>Linearly Separable</td>
-    <td>Linear</td>
+    <td>Hyperplane</td>
     <td><a href="HardMargin-SVM">HardMargin-SVM</a></td>
   </tr>
   <tr>
     <td>Soft Margin SVM</td>
     <td>2</td>
     <td>Linearly Non-separable</td>
-    <td>Linear</td>
+    <td>Hyperplane</td>
     <td><a href="SoftMargin-SVM">SoftMargin-SVM</a></td>
   </tr>
   <tr>
     <td>Kernel SVM</td>
     <td>2</td>
     <td>Linearly Non-separable</td>
-    <td>Non-linear</td>
+    <td>Hyperplane + Kernel</td>
     <td><a href="Kernel-SVM">Kernel-SVM</a></td>
   </tr>
   <tr>
     <td>OC-SVM</td>
     <td>1</td>
     <td>Linearly Non-separable</td>
-    <td>Non-linear</td>
+    <td>Hyperplane + Kernel</td>
     <td><a href="OC-SVM">OC-SVM</a></td>
   </tr>
   <tr>
     <td>SVDD</td>
     <td>1</td>
     <td>Linearly Non-separable</td>
-    <td>Non-linear</td>
+    <td>Hypersphere + Kernel</td>
     <td><a href="SVDD">SVDD</a></td>
   </tr>
 </table>
