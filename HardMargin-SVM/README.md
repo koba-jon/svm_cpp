@@ -4,7 +4,7 @@ This is the implementation of Hard Margin SVM (Hard Margin Support Vector Machin
 
 - Class: 2
 - Problem: Linearly Separable
-- Decision Boundary: Linear
+- Decision Boundary: Hyperplane
 
 
 ## Usage
