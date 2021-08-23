@@ -39,6 +39,13 @@ These are sample programs of Support Vector Machines from scratch in C++.
     <td>Non-linear</td>
     <td><a href="OC-SVM">OC-SVM</a></td>
   </tr>
+  <tr>
+    <td>SVDD</td>
+    <td>1</td>
+    <td>Linearly Non-separable</td>
+    <td>Non-linear</td>
+    <td><a href="SVDD">SVDD</a></td>
+  </tr>
 </table>
 
 ## 2. Requirement
@@ -63,6 +70,7 @@ $ cd svm_cpp
 - [Soft Margin SVM (Soft Margin Support Vector Machine)](SoftMargin-SVM)
 - [Kernel SVM (Non-linear Support Vector Machine)](Kernel-SVM)
 - [OC-SVM (One Class Support Vector Machine)](OC-SVM)
+- [SVDD (Support Vector Data Description)](SVDD)
 
 ## 5. License
 
