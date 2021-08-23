@@ -112,12 +112,12 @@ int main(int argc, const char *argv[]){
 
     // (4.3) Test for SVDD
     svdd.test(test_normal_data, test_anomaly_data);
-    std::cout << "///////////////////////// Test /////////////////////////" << std::endl;
+    std::cout << "//////////////////////////// Test ////////////////////////////" << std::endl;
     std::cout << "accuracy-all: " << svdd.accuracy << " (" << svdd.correct_n + svdd.correct_a << "/" << test_normal_data.size() + test_anomaly_data.size() << ")" << std::endl;
     std::cout << "accuracy-normal: " << svdd.accuracy_n << " (" << svdd.correct_n << "/" << test_normal_data.size() << ")" << std::endl;
     std::cout << "accuracy-anomaly: " << svdd.accuracy_a << " (" << svdd.correct_a << "/" << test_anomaly_data.size() << ")" << std::endl;
     std::cout << "AUROC: " << svdd.auroc << std::endl;
-    std::cout << "////////////////////////////////////////////////////////" << std::endl;
+    std::cout << "//////////////////////////////////////////////////////////////" << std::endl;
 
     return 0;
 }

@@ -157,7 +157,7 @@ void SVDD::train(const std::vector<std::vector<double>> x, const size_t D, const
 
     // (2) Training
     this->log("\n");
-    this->log("/////////////////////// Training ///////////////////////\n");
+    this->log("////////////////////////// Training //////////////////////////\n");
     do {
 
         judge = false;
@@ -213,7 +213,7 @@ void SVDD::train(const std::vector<std::vector<double>> x, const size_t D, const
 
     }while (judge);
     this->log("\n");
-    this->log("////////////////////////////////////////////////////////\n");
+    this->log("//////////////////////////////////////////////////////////////\n");
 
     // (3.1) Description for support vectors
     Ns = 0;
@@ -234,7 +234,7 @@ void SVDD::train(const std::vector<std::vector<double>> x, const size_t D, const
             Ns_out++;
         }
     }
-    this->log("Ns (number of support vectors on the surface of hypersphere) = " + std::to_string(Ns) + "\n");
+    this->log("Ns (number of support vectors on hypersphere) = " + std::to_string(Ns) + "\n");
     this->log("Ns_out (number of support vectors outside hypersphere) = " + std::to_string(Ns_out) + "\n");
 
     // (3.2) Description for b
@@ -290,7 +290,7 @@ void SVDD::train(const std::vector<std::vector<double>> x, const size_t D, const
     }
     this->R /= (double)Ns;
     this->log("Radius = " + std::to_string(this->R) + "\n");
-    this->log("////////////////////////////////////////////////////////\n\n");
+    this->log("//////////////////////////////////////////////////////////////\n\n");
 
     return;
 }
