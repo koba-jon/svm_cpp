@@ -240,13 +240,13 @@ void SVDD::train(const std::vector<std::vector<double>> x, const size_t D, const
     // (3.2) Description for b
     this->b = 0.0;
     for (i = 0; i < Ns; i++){
-        this->b += this->K(this->xs[i], this->xs[i], this->params);
         for (j = 0; j < Ns; j++){
-            this->b -= 2.0 * this->alpha_s[j] * this->K(this->xs[j], this->xs[i], this->params);
+            this->b += 2.0 * this->alpha_s[j] * this->K(this->xs[j], this->xs[i], this->params);
         }
         for (j = 0; j < Ns_out; j++){
-            this->b -= 2.0 * this->alpha_s_out[j] * this->K(this->xs_out[j], this->xs[i], this->params);
+            this->b += 2.0 * this->alpha_s_out[j] * this->K(this->xs_out[j], this->xs[i], this->params);
         }
+        this->b -= this->K(this->xs[i], this->xs[i], this->params);
     }
     this->b /= (double)Ns;
     this->log("bias = " + std::to_string(this->b) + "\n");
@@ -409,7 +409,7 @@ double SVDD::f(const std::vector<double> x){
     }
     ans *= 2.0;
     ans -= this->K(x, x, this->params);
-    ans += this->b;
+    ans -= this->b;
     
     return ans;
 }
