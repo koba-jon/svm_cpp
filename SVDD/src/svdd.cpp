@@ -17,7 +17,7 @@ double kernel::linear(const std::vector<double> x1, const std::vector<double> x2
     double ans;
 
     if (x1.size() != x2.size()){
-        std::cerr << "Error : Don't match the number of elements for inner product." << std::endl;
+        std::cerr << "Error : Couldn't match the number of elements for inner product." << std::endl;
         std::exit(-1);
     }
 
@@ -40,11 +40,11 @@ double kernel::polynomial(const std::vector<double> x1, const std::vector<double
     double ans;
 
     if (x1.size() != x2.size()){
-        std::cerr << "Error : Don't match the number of elements for inner product." << std::endl;
+        std::cerr << "Error : Couldn't match the number of elements for inner product." << std::endl;
         std::exit(-1);
     }
     else if (params.size() != 2){
-        std::cerr << "Error : Don't match the number of hyper-parameters." << std::endl;
+        std::cerr << "Error : Couldn't match the number of hyper-parameters." << std::endl;
         std::exit(-1);
     }
 
@@ -69,11 +69,11 @@ double kernel::rbf(const std::vector<double> x1, const std::vector<double> x2, c
     double ans;
 
     if (x1.size() != x2.size()){
-        std::cerr << "Error : Don't match the number of elements for inner product." << std::endl;
+        std::cerr << "Error : Couldn't match the number of elements for inner product." << std::endl;
         std::exit(-1);
     }
     else if (params.size() != 1){
-        std::cerr << "Error : Don't match the number of hyper-parameters." << std::endl;
+        std::cerr << "Error : Couldn't match the number of hyper-parameters." << std::endl;
         std::exit(-1);
     }
 
