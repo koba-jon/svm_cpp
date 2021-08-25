@@ -23,7 +23,7 @@ double HardMargin_SVM::dot(const std::vector<double> x1, const std::vector<doubl
     double ans;
 
     if (x1.size() != x2.size()){
-        std::cerr << "Error : Don't match the number of elements for inner product." << std::endl;
+        std::cerr << "Error : Couldn't match the number of elements for inner product." << std::endl;
         std::exit(-1);
     }
 

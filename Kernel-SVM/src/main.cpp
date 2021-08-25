@@ -218,7 +218,7 @@ void Set_Kernel(po::variables_map &vm, std::function<double(const std::vector<do
         params = {vm["gamma"].as<double>()};
     }
     else{
-        std::cerr << "Error : Don't match the name of kernel." << std::endl;
+        std::cerr << "Error : Couldn't match the name of kernel." << std::endl;
         std::exit(-1);
     }
 
