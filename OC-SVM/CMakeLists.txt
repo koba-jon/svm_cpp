@@ -14,7 +14,8 @@ if (CMAKE_CXX_COMPILER_VERSION VERSION_LESS 8)
 endif ()
 
 # For OSX
-set(CMAKE_OSX_ARCHITECTURES "arm64")
+#set(CMAKE_OSX_ARCHITECTURES "x86_64") # Intel cpu
+set(CMAKE_OSX_ARCHITECTURES "arm64") # Apple cpu
 
 # Find Package
 find_package(Boost REQUIRED COMPONENTS program_options)
