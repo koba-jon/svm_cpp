@@ -4,7 +4,6 @@
 #include <sstream>
 #include <vector>
 #include <algorithm>
-#include <functional>
 #include <filesystem>
 // 3rd-Party Libraries
 #include <boost/program_options.hpp>
@@ -19,7 +18,7 @@ namespace po = boost::program_options;
 void Collect_Paths(const std::string root, const std::string sub, std::vector<std::string> &paths);
 std::vector<std::string> Get_Paths(const std::string root);
 std::vector<std::vector<double>> Get_Data(const std::vector<std::string> paths, const size_t D);
-void Set_Kernel(po::variables_map &vm, std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> &K, std::vector<double> &params);
+void Set_Kernel(po::variables_map &vm, KernelFunc &K, std::vector<double> &params);
 
 
 // ----------------------
@@ -76,7 +75,7 @@ int main(int argc, const char *argv[]){
     }
 
     // (2) Set Kernel
-    std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> K;
+    KernelFunc K;
     std::vector<double> params;
     Set_Kernel(vm, K, params);
 
@@ -204,7 +203,7 @@ std::vector<std::vector<double>> Get_Data(const std::vector<std::string> paths, 
 // ----------------------------
 // 5. Setting Kernel Function
 // ----------------------------
-void Set_Kernel(po::variables_map &vm, std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> &K, std::vector<double> &params){
+void Set_Kernel(po::variables_map &vm, KernelFunc &K, std::vector<double> &params){
 
     if (vm["kernel"].as<std::string>() == "linear"){
         K = kernel::linear;

@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include <utility>
-#include <functional>
 #include <cmath>
 // Original
 #include "svdd.hpp"
@@ -91,7 +90,7 @@ double kernel::rbf(const std::vector<double> x1, const std::vector<double> x2, c
 // ----------------------------
 // class{SVDD} -> constructor
 // ----------------------------
-SVDD::SVDD(const std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> K_, const std::vector<double> params_, const bool verbose_){
+SVDD::SVDD(const KernelFunc K_, const std::vector<double> params_, const bool verbose_){
     this->K = K_;
     this->params = params_;
     this->verbose = verbose_;

@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <functional>
 #include <cmath>
 // Original
 #include "svm.hpp"
@@ -90,7 +89,7 @@ double kernel::rbf(const std::vector<double> x1, const std::vector<double> x2, c
 // ----------------------------------
 // class{Kernel_SVM} -> constructor
 // ----------------------------------
-Kernel_SVM::Kernel_SVM(const std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> K_, const std::vector<double> params_, const bool verbose_){
+Kernel_SVM::Kernel_SVM(const KernelFunc K_, const std::vector<double> params_, const bool verbose_){
     this->K = K_;
     this->params = params_;
     this->verbose = verbose_;

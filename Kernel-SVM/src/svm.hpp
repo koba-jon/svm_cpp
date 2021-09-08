@@ -14,6 +14,7 @@ namespace kernel{
     double polynomial(const std::vector<double> x1, const std::vector<double> x2, const std::vector<double> params);
     double rbf(const std::vector<double> x1, const std::vector<double> x2, const std::vector<double> params);
 }
+typedef std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> KernelFunc;
 
 
 // -------------------
@@ -32,7 +33,7 @@ private:
     std::vector<int> ys_in;
     std::vector<double> alpha_s_in;
     /*****  kernel  *****/
-    std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> K;
+    KernelFunc K;
     std::vector<double> params;
     /*****  kernel  *****/
 
@@ -48,7 +49,7 @@ public:
 
     // constructor
     Kernel_SVM() = delete;
-    Kernel_SVM(const std::function<double(const std::vector<double>, const std::vector<double>, const std::vector<double>)> K_=kernel::rbf, const std::vector<double> params_={1.0}, const bool verbose_=true);
+    Kernel_SVM(const KernelFunc K_=kernel::rbf, const std::vector<double> params_={1.0}, const bool verbose_=true);
 
     // function
     void train(const std::vector<std::vector<double>> class1_data, const std::vector<std::vector<double>> class2_data, const size_t D, const double C, const double lr, const double limit=0.0001);
